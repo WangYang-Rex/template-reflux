@@ -1,0 +1,59 @@
+// rem转换率
+ptr = 75
+
+body
+    font-size 14px
+    color #333
+    background-color #eee
+
+input,textarea
+    border: none;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+
+img
+    max-width: 100%
+
+.t-R50
+    -webkit-border-radius: 50%;
+    border-radius: 50%
+
+//.t-FBH .t-FBAC .t-FBJC的组合，垂直水平居中
+.center
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+.main
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    overflow-y: auto
+    -webkit-overflow-scrolling: touch
+
+.bg-white
+    background-color: #ffffff
+.ng-gray
+    background-color: #F0F0F0
+
+.footable
+    bottom: (98rem/ptr)
+
+::-webkit-scrollbar
+    width: 0;
+    height: 0;
+    background-color: #fff;
+
+textarea:-webkit-input-placeholder{color:#cecece;font-size:(24rem/ptr)}     /* 使用webkit内核的浏览器 */
+textarea:-moz-placeholder{color:#cecece;font-size:(24rem/ptr)}                  /* Firefox版本4-18 */
+textarea::-moz-placeholder{color:#cecece;font-size:(24rem/ptr)}                  /* Firefox版本19+ */
+textarea:-ms-input-placeholder{color:#cecece;font-size:(24rem/ptr)}  
